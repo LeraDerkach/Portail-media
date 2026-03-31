@@ -1,0 +1,81 @@
+.menu {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #f6f7f9;
+
+    &.active {
+    display: block;
+    animation: slideIn 0.3s forwards;
+    }
+
+    &-arrow {
+   fill: var(--main-color); 
+   cursor: pointer;
+    }
+
+    &-container {
+    height: 100%;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    }
+
+    &-nav {
+    display: flex;
+    align-items: center;
+    background-color: #e6eaf4;
+    height: 14vh;
+    }
+
+    &-input {
+        width: 80%;
+    height: 28px;
+    font-size: 10px;
+    border: 2px solid #e5e5ed;
+    border-radius: 6px;
+    margin: 10px;
+    padding: 4px;
+    }
+
+  
+
+    &-main {
+        padding: 10px;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        p {
+    padding-bottom: 10px;
+}
+    }
+ 
+ &-contact {
+    display: flex;
+    align-items: center;
+ }
+
+ &-mail {
+    text-decoration: underline;
+ }
+
+&-rights {
+    font-size: 8px;
+
+@keyframes slideIn {
+    from {
+        left: -250px;
+    }
+    to {
+        left: 0;
+    }
+}
+}
+}

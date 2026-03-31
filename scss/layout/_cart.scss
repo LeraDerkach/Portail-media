@@ -1,0 +1,28 @@
+.cart {
+    display: flex;
+    gap: 40px;
+    padding: 40px 20px 20px 20px;
+
+&-course {    
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+& p {
+    padding-bottom: 10px;
+}
+}
+
+ @media (max-width: 1025px) {
+    .cart {
+        flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around; 
+    
+
+    &-course { 
+        flex-basis: 40%;
+    }
+    }
+}
