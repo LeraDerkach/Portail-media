@@ -17,12 +17,16 @@
  @media (max-width: 1025px) {
     .cart {
         flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around; 
+        gap: 20px;
+        justify-content: space-around; 
+        padding: 0;
     
 
     &-course { 
         flex-basis: 40%;
+        padding: 6px;
+        border: 1px solid gray;
+        border-radius: 4px;
     }
     }
 }
