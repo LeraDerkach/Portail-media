@@ -325,6 +325,20 @@ header h3::after {
   margin: 10px;
 }
 
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 5;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .picture {
   width: 50%;
   border-radius: 8px;
